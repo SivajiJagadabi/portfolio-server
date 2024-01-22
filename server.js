@@ -1,14 +1,12 @@
 const express=require('express')
-const app=express()
+
 const cors=require('cors')
 const nodemailer = require("nodemailer");
 const mySql=require('mysql')
 
-
+const app=express()
 app.use(express.json())
-app.use(cors({
-    origin:["http://localhost:3000","https://sivajiportfolio.netlify.app","https://jagadabisivaji.netlify.app","https://jagadabiportfolio.netlify.app"],
-}));
+app.use(cors());
 
 
 

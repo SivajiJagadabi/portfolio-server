@@ -17,9 +17,7 @@ const db=mySql.createConnection({
     database:"feedback"
 })
 
-app.get('/contact',(req,res)=>{
-    res.send('Hello World!')
-})
+
 
 app.post('/contact',(req,res)=>{
     console.log(req.body.email)
